@@ -69,3 +69,33 @@ print("The item is",grab_item5)
 # Reverse the string using slicing
 reverse_string = string1[::-1]
 print("The string is now",reverse_string)
+
+# String operation
+
+"""
+Concatenation : The + operator can be used to merge to strings together.
+"""
+# Create two variables with two different strings and merge them
+motorcycle1 = "Kawasaki, "
+motorcycle2 = "Honda"
+concatenation = motorcycle1 + motorcycle2
+statement1 = ("My favorite brands are: {}".format(concatenation))
+print(statement1)
+
+"""
+The * operator allows to multiply a string, resulting in a repeating  pattern.
+"""
+# Create another variable that represent the sleep status
+sleep_status = "zz"
+slepp_pattern = (sleep_status * 5)
+print("The sleep patten is:",slepp_pattern)
+
+"""
+Search
+The in keyword can be used to check if a particular substring exists in another string.
+"""
+
+# Create another variable to store sentence
+sentence = "There are 2 cars in my garage"
+search_item = "2" in sentence
+print("Search status :",search_item)
