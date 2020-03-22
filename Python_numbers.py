@@ -1,45 +1,39 @@
-# Python Numbers
+# Python Data Types and Variables
+
 """
-Main types of numbers in Python:
-- Integers , Floating-point number, Complex Numbers
+- The data types of an item defines the type and range
+  of values that item can have.
+- Python provides three main data type : nunbers , strings, booleans.
 
-Integers :
-- The integer data type is comprised of all the positive and negative whole numbers.
-- The amount of memory an integer occupies depends on  its value.
-  0 ---- 24 bytes
-  1 ---- 28 bytes
+Variables :
+- A variable is simply a name to which a value can be assigned (like a box)
+- Variables are mutable . Hence, the value of a variable can always be updated
+  and replaced 
 
-Floating Point Numbers
-- Floating Point Numbers or flaots, refers o positive and negative decimal numbers.
-- Python allows us to create decimals up to a very high decimals place .
-- This ensures accurate computation for precise values.
-- A float occupies 24 bytes of memeory.
+Naming convention:
+- the name can start with an upper or lower case alphabet.
+- a number can appear in the name , but not at the beginning.
+- underscore (_) can appear anywhere in the name.
+- spaces are not allowed.
+- the variable name should be something meaningful that describes
+  the value it holds
 
-Complex numbers
-- numbers made up of a real and an imaginary part.
-- complex() statement is used to create complex numbers
-- syntax: complex(real, imaginary)
-- a complex number usually takes up 32 bytes of memory
 """
 
-# Create a variable to store a int
-number1 = int(27)
-print("The integer is",number1)
-# Create a variable to store a floating point number
-number2 = 45.100
-print("The floating point number is",number2)
-# Create a variable to store a complex number
-number3 = complex(4, 13)
-print("The complex number is",number3)
+"""
+Grouping values
+- In Python, we can store multiple values together in a single variable.
+- While there are many ways of doing , so the most popular is the list.
+"""
 
-# Python Booleans
-"""
-- The Boolean(bool) data types allows us to choose between two values :
-  true / false
-- A Boolean is used to determine whether the logic of an expression
-  or a comparison is correct 
-- True / False
-"""
-# Example 
-condition = True
-print("The condition is", condition)
+# Crate a list with some motorcycle brands
+motorcycle_brands = ["Kawasaki", "Honda", "BMW"]
+print("The brands are",motorcycle_brands)
+# Use len() statement to count how many items are in  the list.
+num_items = len(motorcycle_brands)
+print("Items in the list:",num_items)
+
+# Quiz 
+# The output of mystring[-2:-6:-2]
+mystring = "0123456789"
+print(mystring[-2:-6:-2])
